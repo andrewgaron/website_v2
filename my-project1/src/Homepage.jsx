@@ -27,10 +27,10 @@ function Homepage() {
     // JSX for the homepage
 
     return(
-        <>
+        <div className="homepage">
         <h1 className="homepage-header">Hello there, I'm Andrew Garon.</h1>
-        <button className="homepage-quote" onClick = {getQuote}>
-            {loading ? 'preparing some inspiration' : 'click to be inspired.'}
+        <button className="homepage-button" onClick = {getQuote}>
+            {loading ? 'preparing some inspiration' : 'Here\'s some inspiration'}
         </button>
         {quote && (
             <div className="homepage-quote-div">
@@ -38,7 +38,12 @@ function Homepage() {
                 <p className="homepage-quote-author">- {author}</p>
             </div>
         )}
-        </>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        </div>
     )
 }
 export default Homepage;

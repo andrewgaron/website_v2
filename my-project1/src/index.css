@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Grey+Qo&family=Macondo&family=Mozilla+Headline:wght@200..700&display=swap');
+
+.canvas{
+    background-color: #000;
+}
+.homepage{
+    color: white;
+    padding-left: 2%;
+}
+.homepage-header{
+    font-family: "Mozilla Headline", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+}
+.homepage-button{
+    font-family: "Macondo", sans-serif;
+    font-size: medium;
+    text-align: left;;
+    padding: 20px 40px;
+    background: transparent;
+    color: white;
+    border-radius: 100%;
+    border: none;
+}
+.homepage-button:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: #1f1f1f;
+    cursor: pointer;
+}
+.homepage-quote-div{
+    font-family: "Macondo", sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
