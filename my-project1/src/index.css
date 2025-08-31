@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Grey+Qo&family=Macondo&family=Mozilla+Headline:wght@200..700&display=swap');
-
+body{
+    overflow-x: hidden;
+}
 .canvas{
     min-height: 100vh;
     background-color: black;

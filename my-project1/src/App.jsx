@@ -7,6 +7,9 @@ import Projects from './Projects.jsx'
 import Contact from './Contact.jsx'
 import Planet from  './Planet.jsx'
 import { useRef } from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
 
@@ -20,6 +23,10 @@ function App() {
       ref.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: false, mirror: true, }); // duration in ms, once = only animate first time
+  }, []);
 
     return(
       <div>
@@ -89,15 +96,22 @@ function App() {
           </Canvas>  
         </section>
         
-        <section className="about-section" ref={aboutRef}>
+        <section className="about-section" ref={aboutRef} 
+        data-aos="fade-up"
+        data-aos-duration="10000"
+      >
           <About/>
         </section>
 
-        <section className="contact-section" ref={contactRef}>
+        <section className="contact-section" ref={contactRef} 
+        data-aos="fade-up"
+        data-aos-duration="10000">
           <Contact/>
         </section>
 
-        <section className="projects-section" ref={projectsRef}>
+        <section className="projects-section" ref={projectsRef} 
+        data-aos="fade-up"
+        data-aos-duration="10000">
           <Projects/>
         </section>
 
