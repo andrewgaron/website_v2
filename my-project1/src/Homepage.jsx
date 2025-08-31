@@ -28,7 +28,6 @@ function Homepage() {
 
     return(
         <div className="homepage">
-        <h1 className="homepage-header">Hello there, I'm Andrew Garon.</h1>
         <button className="homepage-button" onClick = {getQuote}>
             {loading ? 'preparing some inspiration' : 'Here\'s some inspiration'}
         </button>

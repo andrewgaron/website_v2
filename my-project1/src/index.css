@@ -1,19 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Grey+Qo&family=Macondo&family=Mozilla+Headline:wght@200..700&display=swap');
 
 .canvas{
-    background-color: #000;
+    min-height: 100vh;
+    background-color: black;
+}
+.about-section, .contact-section, .projects-section {
+  min-height: 100vh; /* each section takes up full screen */
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 .homepage{
     color: white;
     padding-left: 2%;
+    position: absolute;
 }
 .homepage-header{
+    color: white;
     font-family: "Mozilla Headline", sans-serif;
     font-size: 2em;
     text-align: center;
     margin-top: 20px;
+    z-index: 1;
 }
 .homepage-button{
+    position: relative;
+    z-index: 10;
     font-family: "Macondo", sans-serif;
     font-size: medium;
     text-align: left;;
@@ -32,4 +48,8 @@
     font-family: "Macondo", sans-serif;
     font-size: 20px;
     text-align: left;
+}
+.footer-section{
+    color: white;
+    z-index: 1;
 }
