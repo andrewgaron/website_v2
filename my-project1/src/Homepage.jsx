@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import quotes from './quotes';
 
 function Homepage() {
 
@@ -8,12 +9,10 @@ function Homepage() {
     const [author, setAuthor] = useState("");
     const [loading, setLoading] = useState(false);
 
-    const getQuote = async () => {
+    const getQuote = () => {
         setLoading(true);
         try{
-            const response = await fetch('/quotes.json');
-            const data = await response.json();
-            const random = data[Math.floor(Math.random() * data.length)];
+            const random = quotes[Math.floor(Math.random() * quotes.length)];
             setQuote(random.text);
             setAuthor(random.author);
         }
